@@ -34,6 +34,19 @@
     background-color: rgba(#fff, .05);
     transform: translateY(-3px);
   }
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+
+  @media only screen and (max-width:$bp-medium) {
+    grid-template-columns: repeat(autofit, minmax(15rem, 1fr));
+  }
+
+  @media only screen and (max-width:$bp-small) {
+    display: block;
+
+  }
 }
 
 .copyright {
@@ -45,4 +58,8 @@
   text-align: center;
   width: 70%;
 
+  @media only screen and (max-width:$bp-small) {
+    margin-top: 4rem;
+    width: 100%;    
+  }
 }
