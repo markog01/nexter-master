@@ -45,7 +45,8 @@
 
   @media only screen and (max-width:$bp-small) {
     display: block;
-
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
